@@ -17,7 +17,7 @@ def start_chrom():
 	# chrome_option.add_argument('--headless')#开启无头浏览器
 	#chrome_option.add_argument('--proxy-server=127.0.0.1:10809')#添加代理，只支持http和https
 	chrome_option.add_experimental_option('excludeSwitches', ['enable-logging'])  # 关闭控制台日志
-	browser = webdriver.Chrome(executable_path="D:\\security\\pychrom2021\\Projects\\项目\\测试目录_demo\\brute_force\\chrome_bruteV0.3\\chromedriver.exe", chrome_options=chrome_option)
+	browser = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=chrome_option)
 	browser.set_page_load_timeout(500)
 	return browser
 
